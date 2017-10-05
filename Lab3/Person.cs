@@ -9,13 +9,14 @@ namespace Lab3
     class Person
     {
         public static double budget;
+        public static string name;
 
-        public static string AskName()
+        public static void AskName()
         {
-            string name;
+            
             Console.Write("Skriv ditt namn: ");
             name = Console.ReadLine();
-            return name;
+
         }
         public static double AskBudget()
         {
@@ -28,7 +29,8 @@ namespace Lab3
                 Console.Write("Skriv din budget i SEK: ");
                 strBudget = Console.ReadLine();
                 budgetSave = Double.TryParse(strBudget, out budget);
-                Console.WriteLine("\nDin budget är " + budget + " SEK.\n");
+                Console.WriteLine("\nHej, " + name + "!" +
+                    "\nDin budget är " + budget + " SEK.\n");
 
                 if (budgetSave == false)
                     Console.WriteLine("Försök igen med ett nummer.");
