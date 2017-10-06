@@ -56,7 +56,7 @@ namespace Lab3
                         if (Person.budget >= Wallet.bet)
                         {
                             if (Wallet.bet == 0)
-                            {
+                            { 
                                 Console.WriteLine("Ange en insats innan du spelar.\n");
                                 break;
                             }                              
