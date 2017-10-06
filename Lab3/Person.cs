@@ -11,14 +11,12 @@ namespace Lab3
         public static double budget;
         public static string name;
 
-        public static void AskName()
-        {
-            
+        public static void AskName() //Frågar efter namn
+        {         
             Console.Write("Skriv ditt namn: ");
             name = Console.ReadLine();
-
         }
-        public static double AskBudget()
+        public static double AskBudget() //Frågar efter budget
         {
             string strBudget;
             bool budgetSave;
@@ -39,23 +37,20 @@ namespace Lab3
             }
             return budget;
         }
-        public static void AskRepeat()
+        public static void AskRepeat() //Frågar om omstart efter att pengarna tagit slut
         {
             string runCheck;
 
             if (budget <= 0)
             {
                 Console.WriteLine("Dina pengar är slut. Vill du spela igen?" +
-                "\nY: Ja \nN: Nej");
+                "\nJ: Ja \nN: Nej");
                 runCheck = Console.ReadLine();
-                if (runCheck == "Y")
-                {
+                if (runCheck == "J")
+                {                  
                     budget = 0;
                     Wallet.bet = 0;
-                    Console.WriteLine("Välkommen till Enarmade banditen!\n");
-                    AskName(); 
-                    AskBudget();
-                    Program.Menu();
+                    Program.menuRun = false;
                 }
                 else if (runCheck == "N")
                 {
