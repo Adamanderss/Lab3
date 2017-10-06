@@ -11,7 +11,7 @@ namespace Lab3
         public static string[,] board = new string[3, 3];
         public static string symbolValue;
         public static double winnings;
-        public static bool lineWin;
+        public static bool lineWin; 
         static Random random = new Random();
 
         public static string SymbolChance()
