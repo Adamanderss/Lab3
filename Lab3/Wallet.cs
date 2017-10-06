@@ -10,7 +10,7 @@ namespace Lab3
     {
         public static double bet;
 
-        public static void AskBet()
+        public static void AskBet() //Frågar efter insats
         {
             bool betSave;
             bool betRun = true;
