@@ -14,7 +14,7 @@ namespace Lab3
         {
             bool betSave;
             bool betRun = true;
-            string strBet;
+            string strBet; 
 
             while (betRun)
             {
