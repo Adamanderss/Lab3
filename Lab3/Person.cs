@@ -44,7 +44,7 @@ namespace Lab3
             string runCheck;
 
             if (budget <= 0)
-            {
+            { 
                 Console.WriteLine("Dina pengar är slut. Vill du spela igen?" +
                 "\nY: Ja \nN: Nej");
                 runCheck = Console.ReadLine();
