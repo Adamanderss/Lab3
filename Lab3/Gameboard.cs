@@ -51,7 +51,7 @@ namespace Lab3
                 "\n" + "|" + board[1, 0] + "|" + board[1, 1] + "|" + board[1, 2] + "|" +
                 "\n" + "|" + board[2, 0] + "|" + board[2, 1] + "|" + board[2, 2] + "|" + "\n");
         }
-        public static bool SlotResult(string e) //Parametern e ges i Outcome ett värde av respektive spelsymbol
+        public static bool SlotResult(string e) //Parametern e tilldelas ett värde i Outcome av respektive spelsymbol
         {
             lineWin = false;
 
@@ -68,7 +68,7 @@ namespace Lab3
 
             return lineWin;
         }
-        public static void WinStatement(double x) //Parametern x används i Outcome för att räkna ut varje vinstsumma
+        public static void WinStatement(double x) //Parametern x tilldelas ett värde i Outcome för att räkna ut vinstsumman
         {
             winnings = Wallet.bet * x;
             Person.budget = Person.budget + winnings;

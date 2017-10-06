@@ -9,7 +9,7 @@ namespace Lab3
     class Program
     {
         public static bool programRun = true;
-        public static bool menuRun = true;
+        public static bool menuRun;
 
         static void Main(string[] args)
         {
@@ -26,7 +26,8 @@ namespace Lab3
             int menu;
             string strMenu;
             bool menuSave;
-            
+            menuRun = true;
+
             while (menuRun)
             {
                 Console.WriteLine(
